@@ -19,7 +19,7 @@ class Base:
             return qualitative
     
     
-    def result(self):
+    def result(self,h0, h1, test_name, alpha, pvalue, test_type):
         print("La nature du test est" % (self.test_name))
         print("Le parametre aplha est" % (self.alpha))
         print("L'hypothese h0 est" % (self.h0))
