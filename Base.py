@@ -36,8 +36,7 @@ class T_de_student(Base):
     def test_de_student(self, X,Y):
         self.x = X       
         self.y = Y              
-        if self.check_data(X) == self.quantitative and self.check_data(Y) == self.quantitative:
-            self.stat, self.pvalue = ttest_ind(X,Y)
+        self.stat, self.pvalue = ttest_ind(X,Y)
             
         
             
